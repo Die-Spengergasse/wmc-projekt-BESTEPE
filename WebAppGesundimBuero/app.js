@@ -1,6 +1,6 @@
 const state = {
   wasserHeute: 0,
-  wochenWasser: [0, 0, 0, 0, 0, 0, 0], // Mo-So
+  wochenWasser: [0, 0, 0, 0, 0, 0, 0],
   erledigteZiele: [],
 };
 
