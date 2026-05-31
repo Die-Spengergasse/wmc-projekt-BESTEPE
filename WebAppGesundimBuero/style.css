@@ -6,7 +6,6 @@
 
 body {
   font-family: Arial, sans-serif;
-  /* STANDARD IST JETZT DARK MODE */
   background: linear-gradient(to bottom right, #0f172a, #1e293b);
   color: white;
   padding: 25px;
@@ -95,7 +94,6 @@ button:active {
   transform: scale(0.96);
 }
 
-/* RESET BUTTON STYLING */
 .reset-btn {
   background-color: #c80955;
   margin-top: 18px;
@@ -118,7 +116,6 @@ button:active {
   font-size: 1rem;
 }
 
-/* Heutigen Tag hervorheben */
 .week-item.today {
   background-color: #1e3a5f;
   border-radius: 12px;
@@ -145,7 +142,6 @@ label:hover {
   background: linear-gradient(to right, #1e293b, #334155);
 }
 
-/* Checkbox größer */
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
@@ -153,14 +149,12 @@ input[type="checkbox"] {
   accent-color: #3b82f6;
 }
 
-/* Text schöner */
 label span {
   font-size: 1rem;
   font-weight: 500;
   color: #e2e8f0;
 }
 
-/* Ziel erledigt - Farblich hervorgehoben */
 label:has(input[type="checkbox"]:checked) {
   background: linear-gradient(to right, #1e3a5f, #14532d);
   border-color: #60a5fa;
