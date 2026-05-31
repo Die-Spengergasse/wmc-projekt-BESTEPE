@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gesund im Büro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Gesund im Büro</h1>
+      <p>Kleine Webapp für gesunde Gewohnheiten</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Wasser Tracker</h2>
+        <p>Heute getrunkene Gläser:</p>
+        <div class="counter-box">
+          <button id="minusBtn">-</button>
+          <span id="waterCount">0</span>
+          <button id="plusBtn">+</button>
+        </div>
+        <!-- RESET BUTTON (statt Dark Mode) -->
+        <button id="resetBtn" class="reset-btn">Heute zurücksetzen</button>
+      </section>
+
+      <section class="card">
+        <h2>Wochenübersicht</h2>
+        <div id="weekBox"></div>
+      </section>
+
+      <section class="card">
+        <h2>Meine täglichen Ziele</h2>
+        <label>
+          <input type="checkbox" class="goal" value="wasser" />
+          <span>2 Liter Wasser trinken</span>
+        </label>
+        <label>
+          <input type="checkbox" class="goal" value="bewegung" />
+          <span>Bewegungspause gemacht</span>
+        </label>
+        <label>
+          <input type="checkbox" class="goal" value="treppe" />
+          <span>Treppe statt Lift</span>
+        </label>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
