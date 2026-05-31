@@ -29,20 +29,16 @@ function speichern() {
 function heuteIndex() {
   const heute = new Date().getDay();
 
-  // Sonntag
   if (heute === 0) {
     return 6;
   }
 
-  // Montag = 0, Dienstag = 1 ...
   return heute - 1;
 }
 
 function updateUI() {
-  // Wasserstand anzeigen
   wasserAnzeige.textContent = state.wasserHeute;
 
-  // Checkboxen aktualisieren
   alleCheckboxen.forEach((cb) => {
     cb.checked = state.erledigteZiele.includes(cb.value);
   });
